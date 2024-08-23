@@ -10,8 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="icon.png" />
 
-		<!-- EDIT: title -->
-    <title>My Awesome Resume</title>
+    <title>CV - Roman Kercmar</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -24,6 +23,7 @@
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -40,9 +40,9 @@
 			<div class="row centered">
 				<div class="col-lg-12">
 					<!-- EDIT: name -->
-					<h1>Your Name</h1>
+					<h1>Roman Kerčmar</h1>
 					<!-- EDIT: title | email -->
-					<h3>Web Designer | <a href="mailto:YOU@EMAIL.com" target="_blank">YOU@EMAIL.com</a></h3>
+					<h3>Backend engineer | <a href="mailto:roman.kercmar@gmail.com" target="_blank">roman.kercmar@gmail.com</a></h3>
 				</div><!--/.col-lg-12 -->
 			</div><!--/.row -->
 		</div><!--/.container -->
@@ -59,11 +59,11 @@
 				</div>
 				<div class="col-lg-6">
 					<!-- EDIT: about -->
-					<p>This is a short description of who you are. Keep it to about 3 sentences and make sure to highlight the key points about you. What makes you stand out as an applicant?</p>
+					<p>Backend engineer primarily working with Golang and Python. Focused on solving problems using real-time microservice architectures at scale.</p>
 				</div>
 				<div class="col-lg-3">
 					<!-- EDIT: download link -->
-					<p><a href="my-resume.pdf" target="_blank"><i class="icon-file"></i> <sm>DOWNLOAD PDF</sm></a></p>
+					<p><a href="Roman Kercmar cv.pdf" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="icon-file"></i> DOWNLOAD CV</a></p>
 				</div>
 				
 			</div><!--/.row -->
@@ -72,41 +72,7 @@
 
 
 	<section id="resume" name="resume"></section>
-	<!-- EDUCATION SECTION -->
-	<div class="container desc">
-		<div class="row">
 
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
-				</div>
-				<!-- EDIT: education line 1 -->
-				<div class="col-lg-6">
-					<p><t>Bachelor of Awesomeness</t><br/>
-						University of Maryland
-						<!--<br/><i>Extra info here</i>-->
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>Expected SPRING 2015</sm><br/>
-					<imp><sm>IN PROGRESS</sm></imp>
-					</p>
-				</div>
-	
-				<!-- EDIT: education line 2 -->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Associate of Degrees </t><br/>
-						 Lil 'ol College
-						<!--<br/><i>Extra info here</i>-->
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2012</sm></p>
-				</div>
-	
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
 	
 	<!-- WORK SECTION -->
 	<div class="container desc">
@@ -117,52 +83,124 @@
 				</div>
 				<!-- EDIT: work line 1 -->
 				<div class="col-lg-6">
-					<p class="tight"><t>Position </t><br/>
-						Thatone Corp. <br/>
+					<p class="tight"><t>Software engineer </t><br/>
+						Axilis/Superbet <br/>
 					</p>
-					<p><more>Here's where you put a description of the position you held. Responsibilities, accomplishments - the same as you would do on a standard paper resume, but this will be online and look cooler.</more></p>
+					<p><more><ul>
+						<li>
+							Implemented an archival system that archived old tickets from the betting system, which reduced the database
+							disk load from 7TB to 3.5TB and archived ~22 million tickets and counting. The newly freed space enabled
+							easier management of the database while also creating more space to grow the business by being able to process
+							even more tickets.
+						</li>
+						<li>
+							Implemented and deployed a new service used by more than 1.5 million users every day as a first point of
+							contact with zero downtime. Part of it was the redesign and implementation of frontend to backend communication contracts using REST and gRPC API communication, which enabled us to deprecate the legacy part
+							of the system and make it easier to maintain.
+						</li>
+						<li>
+							Migrated maintenance flags from the crude configuration files to feature flagging, enabling support teams to
+							be able to respond to incidents from 10 minutes to seconds and simplifying the codebase in the process.
+							Technologies used: Golang, gRPC, Kafka, Kubernetes, CockroachDB, ArgoCD, AWS S3
+						</li>
+					</ul></more></p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>AUGUST 2012 - CURRENT <br />
-					CITY, STATE, COUNTRY</sm></p>
+					<p><sm>October 2020 - CURRENT <br />
+					ZAGREB, CROATIA</sm></p>
 				</div>
 				
 				<!-- EDIT: work line 2-->
 				<div class="col-lg-6 col-lg-offset-3">
-					<p class="tight"><t>Previous Position</t><br/>
-						Another Organization Ltd. <br/>
+					<p class="tight"><t>Software engineer</t><br/>
+						Mindsmiths (Vingd) <br/>
 					</p>
-					<p><more>You worked at another job! Great! Describe what you did there, include those responsibilities and accomplishments again.</more></p>
+					<p><more><ul>
+						<li>
+							Led the design and implementation of the company's in-house assistant, including designing the architecture,
+							distributing tasks to the interns working on the project, and collaborating with the product teams on devising
+							the new look of the assistant.
+						</li>
+						<li>
+							Worked on the implementation of Andrija AI, the first digital assistant backed by the Croatian government
+							created to help in the fight against COVID-19. Andrija helped more than 70 thousand people.
+						</li>
+						<li>
+							Designed and implemented a search module with a client SDK and backend server that enabled the search of
+							client's contractors, enabling its salespeople to get the latest data and make decisions on sales based on it
+						</li>
+						<li>
+							Sourced, processed, saved and later used the historical football data from Croatian national league to simulate
+							the outcomes of the following year's tournament using Monte Carlo simulations. The simulation correctly
+							predicted the winner of the tournament.
+						</li>
+					</ul></more></p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>JUNE 2010 - JULY 2012 <br />
-					GOTHAM CITY, USA</sm></p>
+					<p><sm>OCTOBER 2017 - SEPTEMBER 2020 <br />
+					ZAGREB, CROATIA</sm></p>
 				</div>
 		</div><!--/.row -->
 		<br>
 		<hr>
 	</div><!--/.container -->
 
+	<!-- EDUCATION SECTION -->
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>EDUCATION</h5>
+				</div>
+				<!-- EDIT: education line 1 -->
+				<div class="col-lg-6">
+					<p><t>M.S.E. in Computer Science</t><br/>
+						University of Zagreb, FER
+						<!--<br/><i>Extra info here</i>-->
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2020</sm><br/>
+					<!-- <imp><sm>IN PROGRESS</sm></imp> -->
+					</p>
+				</div>
+	
+				<!-- EDIT: education line 2 -->
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>B.S.E. in Computer Science and Information Technology </t><br/>
+						University of Zagreb, FER
+						<!--<br/><i>Extra info here</i>-->
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2018</sm></p>
+				</div>
+	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
 
 	<!-- AWARDS SECTION -->
 	<div class="container desc">
 		<div class="row">
 				<div class="col-lg-2 col-lg-offset-1">
-					<h5>AWARDS</h5>
+					<h5>ADDITIONAL EXPERIENCE AND AWARDS</h5>
 				</div>
 
 				<!-- EDIT: awards line 1-->
 				<div class="col-lg-6">
-					<p><t>Best Smile Award</t><br/>
-						Award-giving organization<br/>
+					<p><t>Instructor</t><br/>
+						FER
 					</p>
+					<p><more>Assisted in lecturing of the Basics of Linux Operating systems course</more></p>
 				</div>
 				<div class="col-lg-3">
-					<p><sm>NOVEMBER 2013</sm></p>
+					<p><sm>2017</sm></p>
 				</div>
 	
 				<!-- EDIT: awards line 2-->
-				<div class="col-lg-6 col-lg-offset-3">
+				<!-- <div class="col-lg-6 col-lg-offset-3">
 					<p class="tight"><t>Another award</t><br/>
 						Awards Site
 					</p>
@@ -170,7 +208,7 @@
 				</div>
 				<div class="col-lg-3">
 					<p><sm>2013</sm></p>
-				</div>
+				</div> -->
 		
 		</div><!--/.row -->
 		<br>
@@ -189,28 +227,27 @@
 				<!-- EDIT: email -->
 				<div class="col-lg-6">
 					<p><t>Email</t><br/>
-						<a href="mailto:YOUR@EMAIL.com" target="_blank" class="mail">YOUR@EMAIL.com</a> <br/>
+						<a href="mailto:roman.kercmar@gmail.com" target="_blank" class="mail">roman.kercmar@gmail.com</a> <br/>
 					</p>
 					<!-- EDIT: address -->
 					<p><t>Address</t><br/>
-						123 Some St. <br/>
-						City, State 01234 <br/>
-						United States of America<br/>
+						Zagreb, 10000 <br/>
+						Croatia<br/>
 					</p>
 					<!-- EDIT: phone number -->
-					<p><t>Phone</t><br/>
-						<a href="tel:2345678901" class="tel">(234) 567-8901</a> <br/>
-					</p>
+					<!-- <p><t>Phone</t><br/>
+						<a href="tel:385953888918" class="tel">+385 95 3888 918</a> <br/>
+					</p> -->
 				</div>
 				<div class="col-lg-3">
 					<p><sm>SOCIAL LINKS</sm></p>
 					<p>
 						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<a href="#" target="_blank"><i class="icon-dribbble"></i></a>
-						<a href="#" target="_blank"><i class="icon-twitter"></i></a>
-						<a href="#" target="_blank"><i class="icon-facebook"></i></a>
-						<a href="#" target="_blank"><i class="icon-linkedin"></i></a>
-						<!--<a href="#" target="_blank"><i class="icon-github"></i></a>-->
+						<!-- <a href="#" target="_blank"><i class="icon-dribbble"></i></a> -->
+						<!-- <a href="#" target="_blank"><i class="icon-twitter"></i></a> -->
+						<!-- <a href="#" target="_blank"><i class="icon-facebook"></i></a> -->
+						<a href="https://www.linkedin.com/in/roman-ker%C4%8Dmar-a74837192" target="_blank"><i class="icon-linkedin"></i></a>
+						<a href="https://github.com/Lolchek" target="_blank"><i class="icon-github"></i></a>
 					</p>
 				</div>
 			</div><!--/.row -->
