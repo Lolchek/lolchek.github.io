@@ -1,265 +1,132 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
-    <!-- OPTIONAL: description -->
-    <meta name="description" content="">
-    <!-- OPTIONAL: author -->
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="icon.png" />
-
-    <title>CV - Roman Kercmar</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-
-    <!-- Link the main.css stylesheet -->
-    <link href="css/main.css" rel="stylesheet">
-    
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
-
-    <link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
-      <script src="js/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Vite App</title>
+    <script type="module" crossorigin src="/assets/index-fzLxKgKp.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DQEuimNh.css">
   </head>
-
   <body>
-	
-	<div id="header" class="header">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-12">
-					<!-- EDIT: name -->
-					<h1>Roman Kerčmar</h1>
-					<!-- EDIT: title | email -->
-					<h3>Backend engineer | <a href="mailto:roman.kercmar@gmail.com" target="_blank">roman.kercmar@gmail.com</a></h3>
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/.header -->
-	
 
-	<section id="about" name="about"></section>
-	<div class="about">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT</h5>
-				</div>
-				<div class="col-lg-6">
-					<!-- EDIT: about -->
-					<p>Backend engineer primarily working with Golang and Python. Focused on solving problems using real-time microservice architectures at scale.</p>
-				</div>
-				<div class="col-lg-3">
-					<!-- EDIT: download link -->
-					<p><a href="Roman Kercmar cv.pdf" target="_blank" class="btn btn-primary btn-lg active" role="button" aria-pressed="true"><i class="icon-file"></i> DOWNLOAD CV</a></p>
-				</div>
-				
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #intro -->
+    <canvas id="bg"></canvas>
+
+    <main>
+
+      <header>
+        <h1>Roman Kercmar</h1>
+        <p>🚀 Welcome to my website!</p>
+      </header>
 
 
-	<section id="resume" name="resume"></section>
+      <blockquote>
+        <p>💻 Backend engineer primarily working with Golang and Python. Focused on solving problems using real-time microservice architectures at scale.</p>
+      </blockquote>
+<!-- 
+      <section>
+        <h2>📜 Manifesto</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-	
-	<!-- WORK SECTION -->
-	<div class="container desc">
-		<div class="row">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>WORK</h5>
-				</div>
-				<!-- EDIT: work line 1 -->
-				<div class="col-lg-6">
-					<p class="tight"><t>Software engineer </t><br/>
-						Axilis/Superbet <br/>
-					</p>
-					<p><more><ul>
-						<li>
-							Implemented an archival system that archived old tickets from the betting system, which reduced the database
-							disk load from 7TB to 3.5TB and archived ~22 million tickets and counting. The newly freed space enabled
-							easier management of the database while also creating more space to grow the business by being able to process
-							even more tickets.
-						</li>
-						<li>
-							Implemented and deployed a new service used by more than 1.5 million users every day as a first point of
-							contact with zero downtime. Part of it was the redesign and implementation of frontend to backend communication contracts using REST and gRPC API communication, which enabled us to deprecate the legacy part
-							of the system and make it easier to maintain.
-						</li>
-						<li>
-							Migrated maintenance flags from the crude configuration files to feature flagging, enabling support teams to
-							be able to respond to incidents from 10 minutes to seconds and simplifying the codebase in the process.
-							Technologies used: Golang, gRPC, Kafka, Kubernetes, CockroachDB, ArgoCD, AWS S3
-						</li>
-					</ul></more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>October 2020 - CURRENT <br />
-					ZAGREB, CROATIA</sm></p>
-				</div>
-				
-				<!-- EDIT: work line 2-->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p class="tight"><t>Software engineer</t><br/>
-						Mindsmiths (Vingd) <br/>
-					</p>
-					<p><more><ul>
-						<li>
-							Led the design and implementation of the company's in-house assistant, including designing the architecture,
-							distributing tasks to the interns working on the project, and collaborating with the product teams on devising
-							the new look of the assistant.
-						</li>
-						<li>
-							Worked on the implementation of Andrija AI, the first digital assistant backed by the Croatian government
-							created to help in the fight against COVID-19. Andrija helped more than 70 thousand people.
-						</li>
-						<li>
-							Designed and implemented a search module with a client SDK and backend server that enabled the search of
-							client's contractors, enabling its salespeople to get the latest data and make decisions on sales based on it
-						</li>
-						<li>
-							Sourced, processed, saved and later used the historical football data from Croatian national league to simulate
-							the outcomes of the following year's tournament using Monte Carlo simulations. The simulation correctly
-							predicted the winner of the tournament.
-						</li>
-					</ul></more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>OCTOBER 2017 - SEPTEMBER 2020 <br />
-					ZAGREB, CROATIA</sm></p>
-				</div>
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
 
-	<!-- EDUCATION SECTION -->
-	<div class="container desc">
-		<div class="row">
+      </section> -->
 
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
-				</div>
-				<!-- EDIT: education line 1 -->
-				<div class="col-lg-6">
-					<p><t>M.S.E. in Computer Science</t><br/>
-						University of Zagreb, FER
-						<!--<br/><i>Extra info here</i>-->
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2020</sm><br/>
-					<!-- <imp><sm>IN PROGRESS</sm></imp> -->
-					</p>
-				</div>
-	
-				<!-- EDIT: education line 2 -->
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>B.S.E. in Computer Science and Information Technology </t><br/>
-						University of Zagreb, FER
-						<!--<br/><i>Extra info here</i>-->
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2018</sm></p>
-				</div>
-	
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
+      <blockquote>
+        <p>👩🏽‍🚀 What have I been doing?</p>
+      </blockquote>
 
-	<!-- AWARDS SECTION -->
-	<div class="container desc">
-		<div class="row">
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ADDITIONAL EXPERIENCE AND AWARDS</h5>
-				</div>
+      <section class="light">
+        <h2>Axilis/Superbet</h2>
+        <p>
+          <ul>
+            <li>
+              Implemented an archival system that archived old tickets from the betting system, which reduced the database disk load from 7TB to 3.5TB and archived ~22 million tickets and counting. The newly freed space enabled easier management of the database while also creating more space to grow the business by being able to process even more tickets.
+            </li>
+            <li>
+              Implemented and deployed a new service used by more than 1.5 million users every day as a first point of contact with zero downtime. Part of it was the redesign and implementation of frontend to backend communication contracts using REST and gRPC API communication, which enabled us to deprecate the legacy part of the system and make it easier to maintain.
+            </li>
+            <li>
+              Migrated maintenance flags from the crude configuration files to feature flagging, enabling support teams to be able to respond to incidents from 10 minutes to seconds and simplifying the codebase in the process. 
+            </li>
+          </ul>
+          Technologies used: Golang, gRPC, Kafka, Kubernetes, CockroachDB, ArgoCD, AWS S3
+        </p>
 
-				<!-- EDIT: awards line 1-->
-				<div class="col-lg-6">
-					<p><t>Instructor</t><br/>
-						FER
-					</p>
-					<p><more>Assisted in lecturing of the Basics of Linux Operating systems course</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2017</sm></p>
-				</div>
-	
-				<!-- EDIT: awards line 2-->
-				<!-- <div class="col-lg-6 col-lg-offset-3">
-					<p class="tight"><t>Another award</t><br/>
-						Awards Site
-					</p>
-					<p><more>This award has a description. You won it eating pie. Or probably doing something more job-related. Maybe you won't even keep this section - you'll replace it with Skills or something else!</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>2013</sm></p>
-				</div> -->
-		
-		</div><!--/.row -->
-		<br>
-	</div><!--/.container -->
-	
+        <!-- <h2>🏆 Accomplishments</h2>
 
-	<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
-	<div id="footwrap" class="footer">
-		<div class="container">
-			<div class="row">
-			
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>CONTACT</h5>
-				</div>
-				<!-- EDIT: email -->
-				<div class="col-lg-6">
-					<p><t>Email</t><br/>
-						<a href="mailto:roman.kercmar@gmail.com" target="_blank" class="mail">roman.kercmar@gmail.com</a> <br/>
-					</p>
-					<!-- EDIT: address -->
-					<p><t>Address</t><br/>
-						Zagreb, 10000 <br/>
-						Croatia<br/>
-					</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> -->
+      </section>
 
-					<p>
-						Credit: <a href="https://github.com/knommon/resume">Knommon - Resume</a>
-					</p>
-					<!-- EDIT: phone number -->
-					<!-- <p><t>Phone</t><br/>
-						<a href="tel:385953888918" class="tel">+385 95 3888 918</a> <br/>
-					</p> -->
-				</div>
-				<div class="col-lg-3">
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
-						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<!-- <a href="#" target="_blank"><i class="icon-dribbble"></i></a> -->
-						<!-- <a href="#" target="_blank"><i class="icon-twitter"></i></a> -->
-						<!-- <a href="#" target="_blank"><i class="icon-facebook"></i></a> -->
-						<a href="https://www.linkedin.com/in/roman-ker%C4%8Dmar-a74837192" target="_blank"><i class="icon-linkedin"></i></a>
-						<a href="https://github.com/Lolchek" target="_blank"><i class="icon-github"></i></a>
-					</p>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
+      <!-- <blockquote>
+        <p>The best way out is always through <br>-Robert Frost</p>
+      </blockquote> -->
+
+      <section class="left">
+        <h2>Mindsmiths/Vingd</h2>
+
+        <!-- <h3>McDonalds</h3> -->
+        <p>
+          <ul>
+            <li>
+              Led the design and implementation of the company's in-house assistant, including designing the architecture, distributing tasks to the interns working on the project, and collaborating with the product teams on devising the new look of the assistant.
+            </li>
+            <li>
+              Worked on the implementation of Andrija AI, the first digital assistant backed by the Croatian government created to help in the fight against COVID-19. Andrija helped more than 70 thousand people.
+            </li>
+            <li>
+              Designed and implemented a search module with a client SDK and backend server that enabled the search of client's contractors, enabling its salespeople to get the latest data and make decisions on sales based on it
+            </li>
+            <li>
+              Sourced, processed, saved and later used the historical football data from Croatian national league to simulate the outcomes of the following year's tournament using Monte Carlo simulations. The simulation correctly predicted the winner of the tournament. 
+            </li>
+          </ul>
+          Technologies used: Python, Django, Flask, MongoDB, Kubernetes, Solr, Pandas, scikit-learn
+          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. -->
+        </p>
+        <!-- <h3>Burger King</h3> -->
+        <!-- <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> -->
+        <!-- <h3>Taco Bell</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p> -->
+
+      </section>
+
+      <!-- <blockquote> -->
+        <div class="conclusion">
+          <p style="text-align: center;">Thanks for watching! Click on these objects to learn more:</p>
+        </div>
+        <!-- <div class="github-link">
+          <svg height="40" aria-hidden="true" viewBox="0 0 24 24" version="1.1" width="40" data-view-component="true" class="octicon octicon-mark-github v-align-middle color-fg-default">
+          <path d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z"></path>
+          </svg> 
+          <a href="https://github.com/Lolchek">Github</a>
+        </div>
+        <div class="linkedin-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="40" height="40" focusable="false">
+            <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"></path>
+          </svg>
+          <a href="https://www.linkedin.com/in/roman-ker%C4%8Dmar-a74837192/">LinkedIn</a>
+        </div>
+        <div class="cv-link">
+          <a href="resources/RomanKercmarCV.pdf" role="button" class="btn btn-primary">Download CV</a>
+        </div> -->
+      <!-- </blockquote> -->
+    </main>
+
   </body>
-
-  <footer>
-	
-  </footer>
 </html>
